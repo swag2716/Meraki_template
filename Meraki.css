@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+/* home */
+
+#navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}   
+
+#navbar #meraki{
+    margin: 18px 15px;
+    padding: 24px 15px;
+    font-size: 30px;
+    font-family: 'Playball', cursive;
+    font-weight: 600;
+    color: white;
+    
+}
+#navbar ul{
+    display: flex;
+    margin-left: 15rem;
+}
+
+#navbar ul li{
+    list-style-type: none;
+    margin: 1.5rem 1.5rem;
+    padding: 2rem 2rem;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+#navbar ul li a:hover{
+    border-radius: 40px;
+    margin: 1rem 1rem;
+    padding: 1rem 0.5rem;
+    background-color: white;
+    color: black;
+}
+
+#home::before{
+    content: "";
+    background: url('main\ bg.jpg');
+    background-size: cover;
+    top: 0px;
+    left: 0px;
+    height: 776px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#home h1{
+    margin-top: 200px;
+    font-size: 60px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 100;
+}
+
+#home p{
+    font-size: 20px;
+    padding: 10px;
+}
+#home .btn{
+    display: flex;
+    margin-bottom: 200px; 
+}
+
+#home button{
+    padding: 15px;
+    margin: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+#home .btn1{
+    background-color:  #f2aa4cff;
+    border: 1px solid black;
+}
+
+#home .btn1:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+#home .btn2{
+    background-color: black;
+    border: 1px solid  #f2aa4cff;
+}
+
+#home .btn2:hover{
+    background-color:  #f2aa4cff;
+    cursor: pointer;
+}
+
+/* about */
+
+#about{
+    padding-top: 10px;
+}
+
+
+.content{
+    display: flex;
+    margin-top: 150px;
+}
+
+.content p{
+    width: 500px;
+    line-height: 23px;
+    margin: 0px 100px;
+    font-size: 16px;
+}
+
+.content img{
+    margin-bottom: 20px;
+    height: 317px;
+    width: 389.5;
+    width: 448.5;
+}
+
+/* portfolio */
+
+#portfolio{
+    padding-top: 10px;
+}
+    
+
+.images img{
+    height: 250px;
+    width: 334px;
+}
+
+.images div{
+    display: inline-block;
+}
+.image{
+    position: relative;
+}
+
+.overlay{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: blue;
+    opacity: 0;
+    transition: 0.5s;
+    height: 250px;
+    width: 334px;
+}
+
+.image:hover .overlay{
+    opacity: 0.7;
+}
+.text{
+    color: white;
+    font-size: 19px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  /* -ms-transform: translate(-50%, -50%); */
+}
+
+.third .mind{
+    text-align: center;
+    margin: 35px;
+    font-size: 20px;
+}
+.third button{
+    display: block;
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+
+.third button:hover{
+    background-color: blue;
+    color: white;
+}
+
+/* Services */
+
+#services{
+    padding-top: 5px;
+}
+
+.designs1{
+    display: flex;
+}
+
+.designs2{
+    display: flex;
+}
+
+.fourth i{
+    font-size: 35px;
+    color: blue;
+    margin-bottom: 25px;
+}
+
+.fourth #des{
+    margin: 40px 60px;
+}
+
+.fourth h2{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.fourth p{
+    line-height: 25px;
+}
+
+/* Contact Us */
+
+#contact{
+    padding-top: 5px;
+}
+
+form input{
+    margin: 20px 15px;
+    padding: 15px 20px;
+}
+
+form .name{
+    display: flex;
+}
+
+form .name1{
+    flex: 1;
+    margin-left: 220px;
+}
+
+form .name2{
+    flex: 1;
+    margin-right: 220px;
+}
+
+form .emsg{
+    display: flex;
+    flex-direction: column;
+}
+form .email{
+    margin: 0px 220px;
+}
+form .msg{
+    margin: 20px 220px;
+    padding-bottom: 150px;
+}
+
+form .btn{
+    display: block;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: blue;
+    margin-bottom: 100px;
+}
+
+form .btn:hover{
+    background-color: black;
+}
+
+/* footer */
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+}
+
+footer .social{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+footer h5{
+    padding: 20px 20px;
+}
+
+footer p{
+    color: white;
+    opacity: 0.4;
+}
+
+footer p span{
+    color: blue;
+}
+
+/* Utility Classes */
+
+.heading{
+    text-align: center;
+    margin-top: 142px;
+}
+
+.heading h1{
+    font-size: 35px;
+    font-weight: 300;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 30px;
+}
+
+.heading p{
+    font-size: 20px;
+}
+
+hr{
+    background-color: rgb(22, 22, 218);
+    height: 2px;
+    width: 100px;
+    margin: 20px auto;
+}
+
+.btn{
+    cursor: pointer;
+}
